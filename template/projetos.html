@@ -1,13 +1,48 @@
 {% extends 'base.html' %}
 
 {% block pageCss %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/style_index.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/projetos.css')}}">
 {% endblock %}
 
 {% block pageTtile %} Homepage {% endblock %}
 
 {% block pageContent %}
-<h1> oi</h1>
+<section>
+    <h1 class="title"> Meus projetos! </h1>
+</section>
+<hr>
+<div class="container-content row">
 
+    <!-- Elemento 1 -->
+    <div class="content-block col-sm-4">
+        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/Online world-rafiki.svg')}}" alt="img">
+    </div>
+
+    <!-- Elemento 2 -->
+    <div class="content-block col-sm-8">
+        <div class="content d-flex justify-content-center flex-wrap">
+        </div>
+        <ul>
+            <li class="subtitle-sobre"><a class="links" href="https://github.com/luanaapms/tcc-app-mobile"> • Aplicativo Mobile de Segurança (S.P.A) </li> </a> <br>
+            <li class="text">Criação de um aplicativo funcional para dispositivos móveis, visando a proteção pessoal fornecendo um meio de segurança e comunicação entre as pessoas.</li> </ul>
+    </div>
+<hr>
+</div>
+<div class="container-content row">
+
+    <!-- Elemento 1 -->
+    <div class="content-block col-sm-4">
+        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/Data extraction-amico.svg')}}" alt="img">
+    </div>
+    <!-- Elemento 2 -->
+    <div class="content-block col-sm-8">
+        <div class="content d-flex justify-content-center flex-wrap">
+        </div>
+        <ul>
+            <li class="subtitle-sobre"><a class="links" href="https://github.com/CodeDontBlow/Scrum-Tutor"> • Ambiente Virtual de Aprendizado (Scrum Tutor) </li></a> <br>
+            <li class="text">Website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. </li> </ul>
+    </div>
+
+</div>
 
 {% endblock %}
