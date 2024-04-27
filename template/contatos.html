@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/contatos.css')}}">
+{% endblock %}
+
+{% block pageTtile %} Homepage {% endblock %}
+
+{% block pageContent %}
+
+<section>
+    <h1 class="title"> Entre em contato! </h1>
+<section>
+    <form action="submit">
+    <label for="email"> Seu e-mail: </label> <br>
+    <input type="text" name="email" id="email"> <br>
+    <label for="assunto"> Assunto: </label> <br>
+    <input type="text" name="assunto" id="assunto"><br> 
+    <label for="desc"> Descrição: </label> <br>
+    <textarea name="desc" id="desc" cols="30" rows="10"></textarea>    
+    <button type="button" value="Enviar">Enviar</button>   
+    </form>
+   </section>
+
+   {% endblock %}
