@@ -1,11 +1,94 @@
 {% extends 'base.html' %}
 
 {% block pageCss %}
-<link rel="stylesheet" href="{{url_for('static', filename='css/style_index.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/sobre.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/img.css')}}">
 {% endblock %}
 
 {% block pageTtile %} Homepage {% endblock %}
 
 {% block pageContent %}
-<h1> oi</h1>
+<section>
+    <h1 class="title"> Hello World! </h1>
+</section>
+<section>
+<div class="flex-container">
+        <div class="container-content row">
+
+            <!-- Elemento 1 -->
+            <div class="content-block col-sm-4">
+                <img class="ft-img" src="{{url_for('static', filename='img/luana.jpeg')}}" alt="img">
+            </div>
+
+            <!-- Elemento 2 -->
+            <div class="content-block col-sm-8">
+                <div class="content d-flex justify-content-center flex-wrap">
+                </div>
+                <ul>
+                    <li class="subtitle-sobre"> • Luana Aparecida Moraes Souza </li> <br>
+                    <li class="text">   - Front-End Developer </li> <br>
+                    <li class="text">   - Cursando Análise e Desenvolvimento de Sistemas, FATEC</li> <br>
+                    <li class="text">   - Formada em Técnico de Desenvolvimento de Sistemas pela ETEC </li>
+            </div>
+        </div>
+    </section>
+    <section>
+    <div class="flex-container">
+        <div class="subtitle-sobre"> • Hobbies:</div>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+             Livros
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Apaixonada por leitura.</strong> Desde que me entendo por gente, os livros têm sido minha companhia constante e minha fonte de inspiração.  A cada livro que leio, encontro novas perspectivas, desafios e emoções que enriquecem minha vida de maneiras inimagináveis. Um dos meus livros favoritos, e que tem um lugar especial em meu coração, é "Jogos Vorazes". 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Esportes
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Adoro praticar esportes e danças.</strong> Amo a adrenalina e a competitividade dos esportes, especialmente o futsal, onde cada movimento é uma oportunidade de estratégia e trabalho em equipe. Além disso, a dança é minha forma de liberar emoções e contar histórias sem palavras. 
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Séries
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>SitComs são as melhores séries.</strong> A arte de contar histórias através de episódios me fascina, e cada série é como um novo universo para explorar. No entanto, minha favorita é 'Modern Family'. Essa comédia brilhantemente escrita e interpretada capta a essência do humor familiar de uma forma única. 
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+</section>
+<section>
+    <div class="flex-container">
+        <div class="subtitle-sobre"> • Tecnologias mais utilizadas:</div> <br>
+        <div class="progress-stacked">
+            <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+              <div class="progress-bar">JavaScript</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+              <div class="progress-bar bg-success">HTML</div>
+            </div>
+            <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+              <div class="progress-bar bg-info">Python</div>
+            </div>
+              </div>
+          </div>
+</section>
 {% endblock %}
