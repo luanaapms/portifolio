@@ -26,6 +26,11 @@ section {
 
 .ft-img {
     width: 200px;
+    display: flex;
+}
+
+.scrum-img {
+    width: 200px;
     align-items: center;
     margin-left: auto;
 }
