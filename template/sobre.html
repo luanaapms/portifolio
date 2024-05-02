@@ -2,19 +2,22 @@
 
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/sobre.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
 <link rel="stylesheet" href="{{url_for('static', filename='css/img.css')}}">
 {% endblock %}
 
 {% block pageTtile %} Homepage {% endblock %}
 
 {% block pageContent %}
-<section>
-    <h1 class="title"> Hello World! </h1>
-</section>
-<section>
-<div class="flex-container">
-        <div class="container-content row">
 
+<div class="container-sm global-container">
+    <div class="container-content text-center">
+        <div class="content-block">
+    <h1 class="TITLE-global"> Hello World! </h1>
+        </div>
+    </div>
+ <section>
+        <div class="container-content row">
             <!-- Elemento 1 -->
             <div class="content-block col-sm-4">
                 <img class="img-fluid ft-img" src="{{url_for('static', filename='img/luana.jpeg')}}" alt="img">
@@ -25,16 +28,32 @@
                 <div class="content d-flex justify-content-center flex-wrap">
                 </div>
                 <ul>
-                    <li class="subtitle-sobre"> • Luana Aparecida Moraes Souza </li> <br>
-                    <li class="text">   - Front-End Developer </li> <br>
-                    <li class="text">   - Cursando Análise e Desenvolvimento de Sistemas, FATEC</li> <br>
-                    <li class="text">   - Formada em Técnico de Desenvolvimento de Sistemas pela ETEC </li>
+                    <li class="SUB-global">Luana Aparecida Moraes Souza<i class="bi bi-moon-fill"></i></li> <br>
+                    <li class="TXT-global-container">   ▶ Front-End Developer </li> 
+                    <li class="TXT-global-container">   ▶ Cursando Análise e Desenvolvimento de Sistemas, FATEC</li> 
+                    <li class="TXT-global-container">   ▶ Formada em Técnico de Desenvolvimento de Sistemas pela ETEC </li>
             </div>
         </div>
-    </section>
+        <hr> <br> <br>
+      <div class="container-content row">
+        <!-- Elemento 1 -->
+        <div class="content-block col-sm-4">
+            <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/About me-amico.svg')}}" alt="img">
+        </div>
+        <!-- Elemento 2 -->
+        <div class="content-block col-sm-8">
+            <div class="content d-flex justify-content-center flex-wrap">
+              <div class="TXT-global-container">
+             <strong> • Explorando o Mundo Digital: Uma Paixão pela Programação </strong> 
+             <br> <br>
+             <p>Nascida e criada em São José dos Campos - SP, tenho 18 anos e estudo programação desde os 15. A programação para mim não é apenas uma habilidade técnica, mas uma forma de expressão criativa. Cada projeto é uma tela em branco, esperando para ser preenchida com soluções inovadoras e funcionais. Seja desenvolvendo aplicativos intuitivos, criando sites dinâmicos ou explorando os limites da inteligência artificial, mergulho de cabeça em cada projeto. </p>
+            </div>
+            </div>
+        </div>
+          </section>
     <section>
     <div class="flex-container">
-        <div class="subtitle-sobre"> • Hobbies:</div>
+        <div class="TXT-global-container"> <strong> • Hobbies: </strong></div>
     <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -74,10 +93,10 @@
         </div>
       </div> 
     </div>
-</section>
-<section>
+ </section>
+ <section>
     <div class="flex-container">
-        <div class="subtitle-sobre"> • Tecnologias mais utilizadas:</div> <br>
+        <div class="TXT-global-container"> <strong> • Tecnologias mais utilizadas: </strong></div>
         <div class="progress-stacked">
             <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
               <div class="progress-bar">JavaScript</div>
@@ -90,20 +109,6 @@
             </div>
               </div>
           </div>
-</section>
-<br>
-<section>
-  <div class="container-content row">
-    <!-- Elemento 1 -->
-    <div class="content-block col-sm-4">
-        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/About me-amico.svg')}}" alt="img">
-    </div>
-    <!-- Elemento 2 -->
-    <div class="content-block col-sm-8">
-        <div class="content d-flex justify-content-center flex-wrap">
-         <strong> • Explorando o Mundo Digital: Uma Paixão pela Programação </strong> <br>
-          Nascida e criada em São José dos Campos - SP, tenho 18 anos e estudo programação desde os 15. A programação para mim não é apenas uma habilidade técnica, mas uma forma de expressão criativa. Cada projeto é uma tela em branco, esperando para ser preenchida com soluções inovadoras e funcionais. Seja desenvolvendo aplicativos intuitivos, criando sites dinâmicos ou explorando os limites da inteligência artificial, mergulho de cabeça em cada projeto.
-        </div>
-
-</section>
+ </section>
+</div>
 {% endblock %}

@@ -2,6 +2,7 @@
 
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/style_index.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
 {% endblock %}
 
 {% block pageTtile %} Homepage {% endblock %}
@@ -44,11 +45,11 @@
           <span class="visually-hidden">Next</span>
       </button>
   </div>
-</section>
-
-<div class="space"></div>
-
-<section>
+ </section>
+ <div class="container-sm global-container">
+  <div class="container-content text-center"></div>
+  <br> <br>
+  <div class="resp">
   <div class="cards d-flex">
     <div class="card col-3">
       <div class="card-body">
@@ -69,16 +70,26 @@
       </div>
     </div>
     </div>
-</section>
-<section>
-  <h1 class="title">Dê uma olhadinha nos meus melhores trabalhos!</h1>
-  <div class="content d-flex justify-content-left sobre-scrum">
   </div>
-  </section>
-  <section>
-    <div class="pg-button d-flex">
-      <a class="btn btn-primary d-flex" href="/projetos" role="button">Meus projetos</a>
-    </div> 
-  </section>
+ </section>
+ <section>
+  <div class="container-content row">
 
+    <!-- Elemento 1 -->
+    <div class="content-block col-sm-6">
+        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/Connected world-rafiki.svg')}}" alt="img">
+    </div>
+
+    <!-- Elemento 2 -->
+    <div class="content-block col-sm-6">
+        <div class="content d-flex justify-content-center flex-wrap">
+        </div>
+            <p class="TITLE-global"> <i> Desenvolvendo o Amanhã: <br>
+              Um Portfólio de Tecnologia <br> e Inovação Criativa!</p><br> </i>
+    </div></div>
+    <div class="pg-button d-flex">
+      <a class="BTN-global" href="/projetos" role="button">Vamos aos projetos...</a>
+    </div>
+  </section>
+</div>
 {% endblock %}

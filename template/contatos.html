@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block pageCss %}
+<link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
 <link rel="stylesheet" href="{{url_for('static', filename='css/contatos.css')}}">
 {% endblock %}
 
@@ -9,8 +10,12 @@
 {% block pageContent %}
 
 <section> 
-    <h1 class="title"> Entre em contato! </h1>
-<section>
+  <div class="container-sm global-container">
+    <div class="container-content text-center">
+        <div class="content-block">
+    <h1 class="TITLE-global"> Entre em contato! </h1>
+        </div>
+    </div>
     <div class="container-content row">
         <!-- Elemento 1 -->
         <div class="content-block col-sm-4">
@@ -22,17 +27,18 @@
             </div>
     <form action="submit">
     <label for="email"> Seu e-mail: </label> <br>
-    <input type="text" name="email" id="email"> <br>
+    <input type="TXT-global-container" name="email" id="email"> <br>
     <label for="assunto"> Assunto: </label> <br>
-    <input type="text" name="assunto" id="assunto"><br> 
+    <input type="TXT-global-container" name="assunto" id="assunto"><br> 
     <label for="desc"> Descrição: </label> <br>
     <textarea name="desc" id="desc" cols="25" rows="5"></textarea>    
     <div class="pg-button d-flex">
-        <a class="btn btn-primary d-flex" button type="button" value="Enviar">Enviar</button>   </a>
+        <a class="BTN-global" button type="button" value="Enviar">Enviar</button>   </a>
     </form>
         </div>
    </section>
     <section>
+      <div class="resp">
         <div class="cards d-flex">
           <div class="card col-3">
             <div class="card-body">
@@ -56,6 +62,8 @@
             </div>
           </div>
         </div>
+      </div>
    </section>
-
+   
+  </div>
    {% endblock %}

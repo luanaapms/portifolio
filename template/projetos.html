@@ -2,13 +2,19 @@
 
 {% block pageCss %}
 <link rel="stylesheet" href="{{url_for('static', filename='css/projetos.css')}}">
+<link rel="stylesheet" href="{{url_for('static', filename='css/global.css')}}">
 {% endblock %}
 
 {% block pageTtile %} Homepage {% endblock %}
 
 {% block pageContent %}
 <section>
-    <h1 class="title"> Meus projetos! </h1>
+    <div class="container-sm global-container">
+        <div class="container-content text-center">
+            <div class="content-block">
+        <h1 class="TITLE-global"> Meus projetos </h1>
+            </div>
+        </div>
 </section>
 <hr>
 <div class="container-content row">
@@ -23,8 +29,8 @@
         <div class="content d-flex justify-content-center flex-wrap">
         </div>
         <ul>
-            <li class="subtitle-sobre"><a class="links" href="https://github.com/luanaapms/tcc-app-mobile"> • Aplicativo Mobile de Segurança (S.P.A) </li> </a> <br>
-            <li class="text">Criação de um aplicativo funcional para dispositivos móveis, visando a proteção pessoal fornecendo um meio de segurança e comunicação entre as pessoas.</li> </ul>
+            <li class="SUB-global"><a class="links" href="https://github.com/luanaapms/tcc-app-mobile"> • Aplicativo Mobile de Segurança (S.P.A) </li> </a> <br>
+            <li class="TXT-global-container">Criação de um aplicativo funcional para dispositivos móveis, visando a proteção pessoal fornecendo um meio de segurança e comunicação entre as pessoas.</li> </ul>
     </div>
 <hr>
 </div>
@@ -39,10 +45,9 @@
         <div class="content d-flex justify-content-center flex-wrap">
         </div>
         <ul>
-            <li class="subtitle-sobre"><a class="links" href="https://github.com/CodeDontBlow/Scrum-Tutor"> • Ambiente Virtual de Aprendizado (Scrum Tutor) </li></a> <br>
-            <li class="text">Website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. </li> </ul>
+            <li class="SUB-global"><a class="links" href="https://github.com/CodeDontBlow/Scrum-Tutor"> • Ambiente Virtual de Aprendizado (Scrum Tutor) </li></a> <br>
+            <li class="TXT-global-container">Website interativo e educativo que capacite os usuários a dominarem a metodologia Scrum para o gerenciamento eficaz de projetos. </li> </ul>
     </div>
 
 </div>
-
 {% endblock %}

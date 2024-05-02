@@ -11,12 +11,6 @@
     box-sizing: border-box;
 }
 
-.title {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-}
 
 section {
     margin-top: 50px;
@@ -62,16 +56,15 @@ section form {
     color: white;
 }
 
-
-.btn {
-    background-color: #c170e7;
-    border: none;
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
-    font-weight: 200;
-    font-size: 13px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
-}
+@media(max-width: 600px) {
+    .card{
+     flex: 1 1 150px;
+     margin: 5px;
+    }
+    .resp{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+    }
+    
+ }

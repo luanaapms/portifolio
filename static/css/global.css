@@ -93,16 +93,16 @@ nav.navbar{
 footer#CDBfooter > div.CDBfooter-top{
     background-color: #085863;
     padding: 10px;
-
+    
     color: white;
 }
-    /* Logo CodeDontBlow */
+    /* Logo  */
     div.CDBfooter-top > div .CDBfooter-logo img{
         width: 100px;
         transition: opacity 200ms;
     }
 
-    /* Slogan CDB */
+    /* Slogan */
     div.CDBfooter-top > div.CDBfooter-message h5{
         font-size: 1.2rem;
         font-weight: 280;
@@ -190,4 +190,154 @@ footer#CDBfooter > div.CDBfooter-bottom{
     padding: 1px;
     }
 
+}
+    
+
+/* .:: Container ::. */
+.container-content{
+    margin: 5px auto;
+}
+
+
+.content-block{
+    padding: 10px 15px;
+
+    color: rgb(7, 7, 7);
+}
+
+
+/* .:: ELEMENTOS ::. */
+
+.TITLE-global{
+    margin: 5px 0 25px;
+
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.SUB-global{
+    margin-bottom: 15px;
+    
+    font-size: 1.35rem;
+    font-weight: 500;
+    text-indent: 30px;
+    text-align: start;
+}
+
+.TXT-global-container{
+    margin-bottom: 30px;
+    text-indent: 10px;
+}
+
+.TXT-global , .LIST-global li{
+    margin-bottom: 7px;
+
+    font-size: .95rem;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media(max-width: 600px){
+    
+    .TITLE-global{
+        font-size: 1.6rem;
+    }
+
+    .SUB-global{
+        font-size: 1.2rem;
+    }
+
+    .TXT-global , .LIST-global li{
+        font-size: .85rem;
+    }
+}
+
+/* Estilização dos Botões */
+.BTN-global{
+    background-color: #c170e7;
+    width: max-content;
+    margin: 5px 0;
+    padding: 10px 25px;
+    
+    display: inline-block;
+
+    color: white;
+    font-size: .9rem;
+    text-decoration: none;
+
+    border-radius: 20px;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.8);
+
+    transition: all 100ms;
+}
+
+    .BTN-global:hover{        
+        opacity: 80%;
+        padding: 11px 26px;
+        
+        box-shadow: 0 4px 0 1px rgba(0, 0, 0, 0.8);
+    }
+
+    .BTN-global:active{        
+        opacity: 95%;
+    }
+
+
+.BTN-global .bi{
+    font-size: 1.1rem;
+
+    color: currentColor;
+}
+
+#btn-return-trail{
+    padding: 15px 25px;
+}
+
+#btn-return-trail .bi{
+    font-size: .85rem;
+}
+
+    #btn-return-trail:hover{
+        padding: 16px 26px;
+    }
+
+    #btn-return-trail:active{
+        background-color: rgba(255, 255, 255, 0.8);
+
+        color: #c170e7;
+        font-weight: 500;
+        border: 2px solid currentColor;
+    }
+
+@media(max-width: 600px) {
+
+.BTN-global{
+    margin: 3px 0;
+    padding: 5px 15px;
+
+    font-size: .7rem;
+
+    box-shadow: 0 2px rgba(0, 0, 0, 0.8);
+}
+
+    .BTN-global:hover{        
+        padding: 6px 16px;
+        box-shadow: 0 2px 0 1px rgba(0, 0, 0, 0.8);
+    }
+
+.BTN-global .bi{
+    font-size: .9rem;
+}
+
+#btn-return-trail{
+    padding: 10px 20px;
+}
+
+#btn-return-trail .bi{
+    font-size: .7rem;
+}
+
+    #btn-return-trail:hover{
+        padding: 11px 21px;
+    }
 }

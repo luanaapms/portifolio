@@ -13,13 +13,6 @@ section {
     margin-bottom: 30px;
 }
 
-.title {
-    font-weight: 400;
-    font-style: normal;
-    font-size: 30px;
-    text-align: center;
-}
-
 .flex-container {
     display: center;
   }
@@ -27,17 +20,11 @@ section {
 .ft-img {
     width: 200px;
     display: flex;
+    border-radius: 30px;
 }
 
 .scrum-img {
     width: 200px;
     align-items: center;
     margin-left: auto;
-}
-
-.subtitle-sobre {
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-    text-align: justify;
 }

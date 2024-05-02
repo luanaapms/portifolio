@@ -76,16 +76,29 @@ section {
     justify-content: center;
 }
 
-.btn {
-    background-color: #c170e7;
-    border: none;
-    border-radius: 50px;
-    width: 200px;
-    height: 80px;
-    font-weight: 200;
-    font-size: 20px;
+
+@media(max-width: 600px) {
+   .card{
+    flex: 1 1 150px;
+    margin: 5px;
+   }
+   .resp{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+    
+   }
+   .card:hover {
+    opacity: 60%;
+        padding: 12px 20px;
 }
 
+.card-title {
+    font-size: .70rem;
+}
+
+.card-text {
+    font-size: .50rem;
+}
+
+}
