@@ -57,14 +57,30 @@ section form {
 }
 
 @media(max-width: 600px) {
-    .card{
-     flex: 1 1 150px;
-     margin: 5px;
-    }
-    .resp{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-    }
-    
- }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:  50px;
+        gap: 20px;
+        
+       }
+   .card{
+    margin: 0 auto;
+    width: 200px;
+   }
+   
+   .card:hover {
+    opacity: 60%;
+        padding: 12px 20px;
+}
+
+.card-title {
+    font-size: 10px;
+}
+
+.card-text {
+    font-size: 9px;
+}
+
+}

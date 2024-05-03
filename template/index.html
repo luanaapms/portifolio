@@ -11,85 +11,83 @@
 
 <section class="container-fluid carrossel">
   <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="{{url_for('static', filename='img/frame1.svg')}}" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="5000">
-              <img src="{{url_for('static', filename='img/frame1.svg')}}" class="d-block w-100"
-                  alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-              <img src="{{url_for('static', filename='img/frame2.svg')}}" class="d-block w-100"
-                  alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-              <img src="{{url_for('static', filename='img/frame3.svg')}}" class="d-block w-100"
-                  alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="5000">
-              <img src="{{url_for('static', filename='img/frame4.svg')}}" class="d-block w-100"
-                  alt="...">
-          </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="{{url_for('static', filename='img/frame2.svg')}}" class="d-block w-100" alt="...">
       </div>
-      <button class="carousel-control-prev justify-content-none" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next " type="button" data-bs-target="#carousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-      </button>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="{{url_for('static', filename='img/frame3.svg')}}" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="{{url_for('static', filename='img/frame4.svg')}}" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev justify-content-none" type="button" data-bs-target="#carousel"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next " type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
- </section>
- <div class="container-sm global-container">
+</section>
+<div class="container-sm global-container">
   <div class="container-content text-center"></div>
   <br> <br>
-  <div class="resp">
-  <div class="cards d-flex">
-    <div class="card col-3">
-      <div class="card-body">
-        <h5 class="card-title">Sobre Mim</h5>
-        <p class="card-text"> Conheça minha história. O caminho percorrido até aqui.</p>
+    <div class="cards d-flex">
+      <div class="card col-3">
+        <div class="card-body">
+          <h5 class="card-title">Sobre Mim</h5>
+          <p class="card-text"> Conheça minha história. O caminho percorrido até aqui.</p>
+        </div>
       </div>
-    </div>
-    <div class="card col-3">
-      <div class="card-body">
-        <h5 class="card-title">Trabalhos</h5>
-        <p class="card-text"> Projetos e trabalhos realizados ou em andamento.</p>
+      <div class="card col-3">
+        <div class="card-body">
+          <h5 class="card-title">Trabalhos</h5>
+          <p class="card-text"> Projetos e trabalhos realizados ou em andamento.</p>
+        </div>
       </div>
-    </div>
-    <div class="card col-3">
-      <div class="card-body">
-        <h5 class="card-title">Contato</h5>
-        <p class="card-text"> Interessado no potencial? Entre em contato!</p>
+      <div class="card col-3">
+        <div class="card-body">
+          <h5 class="card-title">Contato</h5>
+          <p class="card-text"> Interessado no potencial? Entre em contato!</p>
+        </div>
       </div>
-    </div>
     </div>
   </div>
- </section>
- <section>
+
+</section>
+<section>
   <div class="container-content row">
 
     <!-- Elemento 1 -->
     <div class="content-block col-sm-6">
-        <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/Connected world-rafiki.svg')}}" alt="img">
+      <img class="img-fluid scrum-img" src="{{url_for('static', filename='img/Connected world-rafiki.svg')}}" alt="img">
     </div>
 
     <!-- Elemento 2 -->
     <div class="content-block col-sm-6">
-        <div class="content d-flex justify-content-center flex-wrap">
-        </div>
-            <p class="TITLE-global"> <i> Desenvolvendo o Amanhã: <br>
-              Um Portfólio de Tecnologia <br> e Inovação Criativa!</p><br> </i>
-    </div></div>
-    <div class="pg-button d-flex">
-      <a class="BTN-global" href="/projetos" role="button">Vamos aos projetos...</a>
+      <div class="content d-flex justify-content-center flex-wrap">
+      </div>
+      <p class="TITLE-global"> <i> Desenvolvendo o Amanhã: <br>
+          Um Portfólio de Tecnologia <br> e Inovação Criativa!</p><br> </i>
     </div>
-  </section>
+  </div>
+  <div class="pg-button d-flex">
+    <a class="BTN-global" href="/projetos" role="button">Vamos aos projetos...</a>
+  </div>
+</section>
 </div>
 {% endblock %}
